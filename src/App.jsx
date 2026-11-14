@@ -46,14 +46,14 @@ function SelectField({ label, value, onChange, options, placeholder = 'انتخ�
 
 function Header() {
   return <><div className="top-note">پیش‌نمایش محصول برای ارائه به مربی <span>·</span> اطلاعات و برنامه‌ها نمونه هستند</div><header className="site-header container">
-    <a href="#top" className="brand" aria-label="مبینا، بازگشت به بالای صفحه"><span className="brand-mark">M</span><span>مبینا</span></a>
+    <a href="#top" className="brand" aria-label="مبینا، بازگشت به بالای صفحه"><span className="brand-mark">M</span><span className="brand-type"><strong>مبینا</strong><small>COACHING STUDIO</small></span></a>
     <nav aria-label="بخش‌های صفحه"><a href="#how">چطور کار می‌کند</a><a href="#intake">مسیر شاگرد</a><a href="#plan">برنامهٔ نمونه</a><a href="#coach">پنل مربی</a></nav>
     <a className="header-action" href="#plan">دیدن دمو <ArrowLeft size={16} /></a>
   </header></>
 }
 
 function Hero() {
-  return <section id="top" className="hero"><div className="container hero-grid"><div className="hero-copy"><span className="eyebrow light"><span />فضای اختصاصی مربی و شاگرد</span><h1>برنامه‌ای که<br />با <em>تو</em> پیش می‌رود.</h1><p>از شناخت هدف و فرم بدنی تا دریافت برنامهٔ کامل چهار هفته‌ای؛ همه‌چیز در یک تجربهٔ ساده، مرتب و حرفه‌ای.</p><div className="hero-actions"><ButtonLink href="#intake">مسیر شاگرد را ببین</ButtonLink><a className="button ghost" href="#plan">برنامهٔ نمونه را باز کن</a></div><div className="hero-proof"><span className="proof-avatars"><i>م</i><i>س</i><i>آ</i></span><span>طراحی‌شده برای ارتباط مستقیم مربی با شاگردهای خودش</span></div></div></div><div className="demo-chip"><span className="live-dot" /> DEMO <span>· نسخهٔ نمایشی بدون ذخیرهٔ اطلاعات</span></div></section>
+  return <section id="top" className="hero"><div className="container hero-grid"><div className="hero-copy"><span className="eyebrow light"><span />فضای اختصاصی مربی و شاگرد</span><h1>برنامه‌ای که<br />با <em>تو</em> پیش می‌رود.</h1><p>از شناخت هدف و فرم بدنی تا دریافت برنامهٔ کامل چهار هفته‌ای؛ همه‌چیز در یک تجربهٔ ساده، مرتب و حرفه‌ای.</p><div className="hero-actions"><ButtonLink href="#intake">مسیر شاگرد را ببین</ButtonLink><a className="button ghost" href="#plan">برنامهٔ نمونه را باز کن</a></div><div className="hero-proof"><span><CheckCircle2 size={17} /> برنامهٔ کامل چهار هفته‌ای</span><span><ShieldCheck size={17} /> مسیر اختصاصی هر شاگرد</span></div></div></div><div className="demo-chip"><span className="live-dot" /> DEMO <span>· نسخهٔ نمایشی بدون ذخیرهٔ اطلاعات</span></div></section>
 }
 
 function Features() {
