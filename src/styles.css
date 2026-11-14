@@ -1,5 +1,4 @@
-@font-face{font-family:Vazirmatn;src:url('/assets/Vazirmatn.woff2') format('woff2');font-style:normal;font-weight:100 900;font-display:swap}
-:root{font-family:Vazirmatn,Tahoma,sans-serif;color:#172330;background:#f7f5f0;--navy:#101c29;--ink:#172330;--muted:#5e6a78;--coral:#f36f5e;--coral-deep:#b54d40;--cream:#f7f5f0;--line:#e8e8e5}
+:root{font-family:'Estedad Variable',Tahoma,sans-serif;color:#172330;background:#f7f5f0;--navy:#101c29;--ink:#172330;--muted:#5e6a78;--coral:#f36f5e;--coral-deep:#b54d40;--cream:#f7f5f0;--line:#e8e8e5}
 *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;line-height:1.7}button,input,textarea{font:inherit}button{cursor:pointer}a{text-decoration:none;color:inherit}img{max-width:100%}
 button:focus-visible,a:focus-visible,input:focus-visible,textarea:focus-visible,[role=combobox]:focus-visible{outline:3px solid #ffaf9e;outline-offset:3px}
 .container{width:min(1180px,calc(100% - 40px));margin-inline:auto}.section{padding:110px 0}.eyebrow{display:inline-flex;align-items:center;gap:10px;color:var(--coral-deep);font-size:13px;font-weight:850}.eyebrow:before{content:'';width:22px;height:2px;border-radius:2px;background:currentColor}.eyebrow.light{color:#ffb6a8}
@@ -63,3 +62,26 @@ body{background:#f6f4ef}
 @media(max-width:980px){.feature-card{padding:16px 14px;gap:10px}.feature-content strong{font-size:15px}.feature-content>span:last-child{font-size:10px}}
 @media(max-width:760px){.hero{background-position:28% center}.feature-grid{grid-template-columns:1fr;gap:0}.feature-card{min-height:90px;border-left:0;border-bottom:1px solid #ffffff22;padding:15px 20px}.feature-card:last-child{border-bottom:0}.feature-content strong{font-size:17px}.feature-content>span:last-child{font-size:12px}.how-grid{gap:14px}}
 @media(max-width:590px){.brand-type strong{font-size:23px}.brand-type small{font-size:7px}.hero{background-position:20% center}.hero:before{background:linear-gradient(180deg,#0d1a27a1 0%,#0d1a27b1 34%,#0d1a27f2 100%)}.hero-proof{gap:11px;flex-wrap:wrap;margin-top:25px}.hero-proof>span{font-size:11px}.feature-grid{margin-top:-33px;border-radius:18px}.feature-card{min-height:83px;padding:12px 16px}.feature-icon,.feature-2 .feature-icon,.feature-3 .feature-icon{width:44px;height:44px;flex-basis:44px}.feature-content strong{font-size:16px}.feature-content>span:last-child{font-size:11px}.how-section{padding-top:76px}.how-card{min-height:0;padding:20px 0 23px}.how-card h3{margin-top:9px}}
+
+/* Clearer student journey */
+.how-link{display:inline-flex;align-items:center;gap:9px;margin-top:25px;color:var(--coral-deep);font-size:14px;font-weight:850;border-bottom:1px solid #dca99a;padding-bottom:5px}
+.how-link:hover{color:#8d382d}
+.intake-content{scroll-margin-top:22px}
+.intake-content:focus{outline:none}
+.success-summary{display:flex;justify-content:center;gap:10px;flex-wrap:wrap;margin:0 0 24px}
+.success-summary span{display:grid;gap:2px;text-align:right;min-width:135px;background:#f5f7f5;border:1px solid #e2e8e3;border-radius:12px;padding:9px 14px;color:#607079;font-size:11px}
+.success-summary strong{color:#263a3f;font-size:14px}
+.intake-side>p,.step-panel>p{line-height:1.9}
+.form-progress{height:6px}
+@media(max-width:590px){
+  .intake-side{padding:15px}
+  .intake-side h3{font-size:17px;margin:8px 0 11px}
+  .intake-side>p{display:none}
+  .step-item{min-height:60px;font-size:11px}
+  .form-top{display:grid;gap:12px}
+  .form-progress{width:100%}
+  .form-top .pill{font-size:11px}
+  .step-panel h3{margin-top:16px}
+  .step-panel>p{font-size:13px}
+  .success-actions .button{white-space:normal}
+}
