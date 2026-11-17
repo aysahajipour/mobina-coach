@@ -44,6 +44,23 @@ function SelectField({ label, value, onChange, options, placeholder = 'انتخ�
   </Select.Root></div>
 }
 
+function DemoWelcome() {
+  const [open, setOpen] = useState(true)
+  return <Dialog.Root open={open} onOpenChange={setOpen}><Dialog.Portal>
+    <Dialog.Overlay className="welcome-overlay" />
+    <Dialog.Content className="welcome-dialog" dir="rtl" aria-describedby="welcome-description">
+      <Dialog.Close className="welcome-close" aria-label="بستن پیام معرفی"><X size={20} /></Dialog.Close>
+      <div className="welcome-orbit" aria-hidden="true"><Sparkles size={32} /></div>
+      <span className="welcome-kicker"><span /> نسخهٔ آزمایشی مبینا</span>
+      <Dialog.Title>قبل از شروع، یک نکتهٔ کوتاه</Dialog.Title>
+      <Dialog.Description id="welcome-description">این سایت یک <strong>دموی اولیه</strong> برای نشان دادن مسیر شاگرد و مربی است. طراحی، محتوای برنامه‌ها و امکانات نهایی پس از بررسی نیازهای مربی تکمیل می‌شوند.</Dialog.Description>
+      <div className="welcome-facts"><span><CheckCircle2 size={17} /> برنامه‌ها نمونه‌اند</span><span><ShieldCheck size={17} /> اطلاعاتی ذخیره نمی‌شود</span></div>
+      <Dialog.Close className="button primary welcome-cta">متوجه شدم، دمو را ببینم <ArrowLeft size={18} /></Dialog.Close>
+      <p className="welcome-footnote">می‌توانی فرم شاگرد و برنامهٔ یک‌ماههٔ نمونه را امتحان کنی.</p>
+    </Dialog.Content>
+  </Dialog.Portal></Dialog.Root>
+}
+
 function Header() {
   return <><div className="top-note">پیش‌نمایش محصول برای ارائه به مربی <span>·</span> اطلاعات و برنامه‌ها نمونه هستند</div><header className="site-header container">
     <a href="#top" className="brand" aria-label="مبینا، بازگشت به بالای صفحه"><span className="brand-mark">M</span><span className="brand-type"><strong>مبینا</strong><small>COACHING STUDIO</small></span></a>
@@ -134,5 +151,5 @@ function Coach() {
 }
 
 export default function App() {
-  return <><Header /><main><Hero /><Features /><HowItWorks /><Intake /><Plan /><Coach /><section className="closing"><div className="container"><span className="eyebrow light">از ایده تا تجربهٔ واقعی</span><h2>یک فضای تمرینی که شاگرد دوست دارد به آن برگردد.</h2><p>این نسخه برای نمایش ظاهر و مسیر کار ساخته شده است. داده‌ها، نام مربی، برنامه‌ها و هویت بصری در نسخهٔ نهایی اختصاصی می‌شوند.</p><ButtonLink href="#intake">دمو را دوباره امتحان کن</ButtonLink></div></section></main><footer><div className="container footer-inner"><span><strong>مبینا</strong> · دموی مفهومی سامانهٔ برنامه تمرینی</span><small>نام‌ها، برنامهٔ تمرینی و تصویرهای این صفحه نمونه‌اند.</small></div></footer></>
+  return <><DemoWelcome /><Header /><main><Hero /><Features /><HowItWorks /><Intake /><Plan /><Coach /><section className="closing"><div className="container"><span className="eyebrow light">از ایده تا تجربهٔ واقعی</span><h2>یک فضای تمرینی که شاگرد دوست دارد به آن برگردد.</h2><p>این نسخه برای نمایش ظاهر و مسیر کار ساخته شده است. داده‌ها، نام مربی، برنامه‌ها و هویت بصری در نسخهٔ نهایی اختصاصی می‌شوند.</p><ButtonLink href="#intake">دمو را دوباره امتحان کن</ButtonLink></div></section></main><footer><div className="container footer-inner"><span><strong>مبینا</strong> · دموی مفهومی سامانهٔ برنامه تمرینی</span><small>نام‌ها، برنامهٔ تمرینی و تصویرهای این صفحه نمونه‌اند.</small></div></footer></>
 }
